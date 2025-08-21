@@ -1,0 +1,61 @@
+# ==================================
+# BACKEND - Python / Flask
+# ==================================
+# Entorno virtual
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración sensible
+.env
+instance/config.py
+
+# Migraciones (opcional: puedes subirlas si quieres mantener versión de BD)
+migrations/
+
+# Archivos de log
+*.log
+
+# IDEs y editores
+.idea/
+.vscode/
+
+# ==================================
+# FRONTEND - React / Node.js
+# ==================================
+# Node modules
+frontend/node_modules/
+
+# Build/producción
+frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================================
+# SISTEMA / TEMPORALES
+# ==================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# ==================================
+# Otros (dependencias opcionales)
+# ==================================
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# ==================================
+# Ignorar carpetas de paquetes
+# ==================================
+*.egg-info/
+dist/

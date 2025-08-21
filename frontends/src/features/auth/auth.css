@@ -1,0 +1,76 @@
+/* auth.css */
+
+/* Contenedor principal del formulario */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Encabezado del formulario */
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs del formulario */
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.auth-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón de login o registro */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Mensajes de error */
+.auth-container .error-message {
+  color: #ff4d4f;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Link para registrarse o volver al login */
+.auth-container .auth-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-container .auth-link:hover {
+  text-decoration: underline;
+}
