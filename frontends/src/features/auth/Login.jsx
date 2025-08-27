@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // <-- Importa useNavigate
+import { useNavigate } from "react-router-dom";
 import "./auth.css";
 import { loginUser } from "../../api/auth";
 
@@ -26,33 +26,38 @@ const Login = () => {
   };
 
   return (
+
     <div className="auth-container">
-      <h2>Login</h2>
-      {error && <div className="error-message">{error}</div>}
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          placeholder="Correo"
-          value={correo}
-          onChange={(e) => setCorreo(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={contrasena}
-          onChange={(e) => setContrasena(e.target.value)}
-          required
-        />
-        <button type="submit">Iniciar sesión</button>
-      </form>
-      <button
-        type="button"
-        className="auth-link"
-        onClick={() => navigate("/register")} 
-      >
-        ¿No tienes cuenta? Regístrate
-      </button>
+      <div className="form-box">
+        <h2>Login</h2>
+        {error && <div className="error-message">{error}</div>}
+        <form onSubmit={handleLogin}>
+          <input 
+            type="email"
+            placeholder="Correo"
+            value={correo}
+            onChange={(e) => setCorreo(e.target.value)}
+            required
+          />
+          <input 
+            type="password"
+            placeholder="Contraseña"
+            value={contrasena}
+            onChange={(e) => setContrasena(e.target.value)}
+            required
+          />
+          <button type="submit">Iniciar sesión</button>
+        </form>
+        <button 
+          type="button"
+          className="auth-link"
+          onClick={() => navigate("/register")} 
+        >
+          ¿No tienes cuenta? Regístrate
+        </button>
+        <p>Si necesitas ayuda para Iniciar session, o perdiste tu contraseña
+           Contactese con nuestro equipo</p>
+      </div>
     </div>
   );
 };
