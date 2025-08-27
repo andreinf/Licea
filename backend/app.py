@@ -2,6 +2,8 @@ from flask import Flask
 from flask_mysqldb import MySQL
 from flask_cors import CORS
 from routes.auth_routes import auth_bp
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
@@ -9,10 +11,12 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'        
-app.config['MYSQL_PASSWORD'] = ''        
-app.config['MYSQL_DB'] = 'licea_completa'
+load_dotenv()
+
+app.config['MYSQL_HOST'] = os.getenv("DB_HOST")
+app.config['MYSQL_USER'] = os.getenv("DB_USER")
+app.config['MYSQL_PASSWORD'] = os.getenv("DB_PASSWORD")
+app.config['MYSQL_DB'] = os.getenv("DB_NAME")
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 mysql = MySQL(app)

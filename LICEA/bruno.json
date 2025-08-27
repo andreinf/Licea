@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "LICEA",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
