@@ -36,3 +36,15 @@ git commit -m "Mensaje descriptivo del cambio"
 git push origin main
 ```
 
+## DESCARGAR RAMAS PROYECTO
+`git fetch --all` = actualiza las ramas que hay en el proyecto
+`git branch -r` = con este ven las ramas
+`git checkout nombre-de-la-rama` = cambia las ramas que vayan a utilizar
+### PASOS PARA SUBIR A REPOSITORIO
+```
+git add .
+git commit -m "Descripción de lo que hicieron"
+git push origin nombre-de-la-rama
+```
+
+
