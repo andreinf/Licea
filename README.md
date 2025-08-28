@@ -10,11 +10,8 @@ para las dependencias se necesita siempre despues de clonarlo usar los siguiente
 ## *Crear el entorno virtual*
 `python -m venv venv`
 
-## *Activar entorno virtual (Windows)*
-`venv\Scripts\activate`
-
-## *Activar entorno virtual (Linux/Mac)*
-`source venv/bin/activate`
+## *Activar entorno virtual*
+`source venv/Scripts/activate`
 
 
 ## **IMPORTANTE!!**
