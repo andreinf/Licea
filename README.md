@@ -25,6 +25,20 @@ depende de la sección que vayan a trabajar tienen que seleccionar primero la ca
 ## **BACKEND**
 `source venv/Scripts/activate` = activa el venv para que el backend funcione junto con la BD
 `python app.py` = enciende el servidor local
+dentro de la carpeta de backend tienen que crear un archivo .env y dentro de este poner el siguiente codigo:
+```
+FLASK_APP=app.py
+FLASK_ENV=development
+SECRET_KEY=tu_clave_secreta_aqui
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=licea_completa
+DB_PORT=3306
+
+FRONTEND_URL=http://localhost:3000
+```
 
 ## **FRONTEND**
 `npm start` = enciende el servidor
